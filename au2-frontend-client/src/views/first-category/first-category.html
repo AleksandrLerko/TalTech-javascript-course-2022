@@ -1,0 +1,19 @@
+<import from="../../components/joke"/>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                ${appState.listOfCategories[0].slice(0, 1).toUpperCase() + appState.listOfCategories[0].slice(1) + ' ' + 'jokes are' + ' ' + 'here!'}
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr repeat.for="item of appState.firstJokes">
+            <td>
+                <joke joke.bind="item"></joke>
+            </td>
+        </tr>
+    </tbody>
+</table>

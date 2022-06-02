@@ -1,0 +1,84 @@
+.middleHomePageH1 {
+  text-align: center;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.productCol {
+  margin-bottom: 1rem;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 200,
+    'opsz' 48
+}
+
+.registerButton {
+  margin-right: 1rem;
+}
+
+.searchInput {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.searchedElement {
+  color: orange;
+}
+
+.notbold {
+  font-weight: normal
+}
+
+.containerUnit{
+  background-color: grey;
+  border-radius: 1rem;
+
+}
+
+
+.accountSubmitButton{
+  margin-top: 1rem;
+}

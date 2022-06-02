@@ -1,0 +1,32 @@
+<import from="../../components/joke"/>
+
+<!-- <table class="table">
+    <thead>
+        <tr>
+            <th>
+                ${appState.listOfCategories[2].slice(0, 1).toUpperCase() + appState.listOfCategories[2].slice(1) + ' ' + 'jokes are' + ' ' + 'here!'}
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr repeat.for="item of appState.thirdJokes">
+            <td>
+                <joke joke.bind="item"></joke>
+            </td>
+        </tr>
+    </tbody>
+</table> -->
+
+<p>
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+      Open to see ${appState.listOfCategories[2].slice(0, 1).toUpperCase() + appState.listOfCategories[2].slice(1) + ' ' + 'jokes'}
+    </button>
+  </p>
+  <div style="min-height: 120px;">
+    <div class="collapse collapse-horizontal" id="collapseWidthExample">
+      <div class="card card-body" style="width: max-content;" repeat.for="item of appState.thirdJokes">
+        <div><joke joke.bind="item"></joke></div>
+      </div>
+    </div>
+  </div>

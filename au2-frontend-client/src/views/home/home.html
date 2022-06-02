@@ -1,0 +1,40 @@
+<import from="../../components/joke"/>
+
+<table>
+    <tr>
+        <td>
+            <div class="btn-group">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    ${appState.listOfCategories[0].slice(0, 1).toUpperCase() + appState.listOfCategories[0].slice(1)}
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li repeat.for="item of appState.jokesContainer[0].value" ><a class="dropdown-item" href="#"><joke joke.bind="item"></joke></a></li>
+                </ul>
+                </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="btn-group">
+                <button class="btn btn-danger dropdown-toggle second" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    ${appState.listOfCategories[1].slice(0, 1).toUpperCase() + appState.listOfCategories[1].slice(1)}
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li repeat.for="item of appState.jokesContainer[1].value" ><a class="dropdown-item" href="#"><joke joke.bind="item"></joke></a></li>
+                </ul>
+                </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="btn-group">
+                <button class="btn btn-info dropdown-toggle third" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    ${appState.listOfCategories[2].slice(0, 1).toUpperCase() + appState.listOfCategories[2].slice(1)}
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li repeat.for="item of appState.jokesContainer[2].value" ><a class="dropdown-item" href="#"><joke joke.bind="item"></joke></a></li>
+                </ul>
+                </div>
+        </td>
+    </tr>
+</table>

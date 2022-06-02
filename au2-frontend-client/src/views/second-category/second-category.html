@@ -1,0 +1,31 @@
+<import from="../../components/joke"/>
+
+<!-- <table class="table">
+    <thead>
+        <tr>
+            <th>
+                ${appState.listOfCategories[1].slice(0, 1).toUpperCase() + appState.listOfCategories[1].slice(1) + ' ' + 'jokes are' + ' ' + 'here!'}
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr repeat.for="item of appState.secondJokes">
+            <td>
+                <joke joke.bind="item"></joke>
+            </td>
+        </tr>
+    </tbody>
+</table> -->
+
+<div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+            ${appState.listOfCategories[1].slice(0, 1).toUpperCase() + appState.listOfCategories[1].slice(1) + ' ' + 'jokes are' + ' ' + 'here!'}
+        </button>
+      </h2>
+      <div repeat.for="item of appState.secondJokes" id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div><joke joke.bind="item"></joke></div>
+      </div>
+  </div>
